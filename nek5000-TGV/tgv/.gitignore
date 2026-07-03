@@ -1,0 +1,3 @@
+# Ignore an entire folder (always add a trailing slash)
+data/
+
