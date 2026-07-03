@@ -1,4 +1,3 @@
 nameing convention:
-code-case_name
-[nek5000-tgv]
+code_name-case_name
 [nek5000_cantera-flow_over_cylinder]
