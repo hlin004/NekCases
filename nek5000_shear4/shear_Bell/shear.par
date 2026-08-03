@@ -1,0 +1,49 @@
+# Thus, in the .rea file, p99=3 (dealiasing on) and p103=0 (filtering off).
+# initial conditions: the "thin" shear layer (rho=100) and the thick one (rho=30)
+# thin case: 256^2 resolution (lx1=17 with the present 16x16 element mesh)
+# thick case: 128^2 resolution (lx1=9 with the present 16x16 element mesh).
+# nu=.00001 and Re=10^5.
+
+# .rea file: https://www.mcs.anl.gov/~oanam/old_page/index.php/Parameters
+# https://nek5000.github.io/NekDoc/appendix.html
+#       1.0000000E-07     p21 DIVERGENCE - tolerance for the pressure solver
+#      1.0000000E-09     p22 HELMHOLTZ - tolerance for the velocity solver
+#       3.000000         p23 NPSCAL - number of passive scalars
+#        3.000000         p27 TORDER - temporal discretization order (2 or 3)
+#        1.000000         p43 0=semg/1=schwarz - 0: additive multilevel scheme / 1: original 2 level scheme
+#       6.000000         p66 write fmt:ONLY postx uses rea value - Output format: (only postx uses .rea value; other nondefault should be set in usrdat)
+#       6.000000         p67 read fmt: same modes as p66 - Read format:   (modes as for P066)
+#       80.00000         p93 Numbr of prev pressure solns saved - if >0, number of previous solutions to use for residual projection (adjust MXPREF in SIZEu accordingly)
+#       3.000000         p94 start projecting vel. after p94 step - if >0, start projecting velocity and passive scalars after P094 steps 
+#       5.000000         p95 start projecting pr after p95 step - if >0, start projecting pressure after P095 steps
+      
+[GENERAL]
+stopAt = endTime
+endTime = 1.8
+dt = 1.0e-3
+variableDT = yes
+targetCFL = 1
+writeControl = runTime
+writeInterval = 0.1
+dealiasing = yes
+
+filtering = explicit
+filterModes = 2
+filterWeight = 0.05
+
+
+[VELOCITY]
+density = 1        #kg/m3
+viscosity = -1e5  #kg/m-s Re number
+residualProj = yes
+residualTol = 1.0e-09
+
+#[TEMPERATURE]
+#rhoCp = 1
+#conductivity = 1
+
+[CVODE]
+relativeTol = 1.0e-02
+absoluteTol = 1.0e-02 
+
+

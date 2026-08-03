@@ -1,0 +1,1148 @@
+ar -cr libblasLapack.a *.o
+
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/drive1.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/drive1.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/drive2.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/drive2.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/plan5.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/plan5.o
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj -I/home/hailu/Nek5000/3rd_party/gslib/include /home/hailu/Nek5000/core/nekio.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/nekio.o
+"/home/hailu/Nek5000/core/nekio.c", line 383: warning: arithmetic on pointer to void or function type [nonobject_pointer_arithmetic]
+          memcpy(buf + offset, s[k].buf, s[k].count);
+                     ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/home/hailu/Nek5000/core/nekio.c", line 399: warning: variable "ferr" was declared but never referenced [declared_but_not_referenced]
+    int ferr;
+        ^
+
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/plan4.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/plan4.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/bdry.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/bdry.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/coef.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/coef.o
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/coef.f: 1062)
+  0 inform,   1 warnings,   0 severes, 0 fatal for geodat1
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/coef.f: 1062)
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/conduct.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/conduct.o
+  0 inform,   1 warnings,   0 severes, 0 fatal for setarea
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/connect1.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/connect1.o
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/bdry.f: 992)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/bdry.f: 1290)
+  0 inform,   2 warnings,   0 severes, 0 fatal for bcneutr
+NVFORTRAN-W-0155-The type of FLOAT is now double precision with -r8  (/home/hailu/Nek5000/core/connect1.f: 734)
+  0 inform,   1 warnings,   0 severes, 0 fatal for genxyzl
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/connect2.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/connect2.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/dssum.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/dssum.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/eigsolv.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/eigsolv.o
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/eigsolv.f: 250)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/eigsolv.f: 250)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/eigsolv.f: 137)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/eigsolv.f: 146)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/eigsolv.f: 154)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/eigsolv.f: 163)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/eigsolv.f: 172)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/eigsolv.f: 180)
+  0 inform,   8 warnings,   0 severes, 0 fatal for eigenv
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/gauss.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/gauss.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/genxyz.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/genxyz.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/navier1.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/navier1.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/makeq.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/makeq.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/navier0.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/navier0.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/navier2.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/navier2.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/navier3.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/navier3.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/navier4.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/navier4.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/prepost.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/prepost.o
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier4.f: 191)
+  0 inform,   1 warnings,   0 severes, 0 fatal for gensoln
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier4.f: 191)
+  0 inform,   1 warnings,   0 severes, 0 fatal for updtset
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier4.f: 420)
+  0 inform,   1 warnings,   0 severes, 0 fatal for updrhse
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/speclib.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/speclib.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/map2.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/map2.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/mvmesh.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/mvmesh.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/ic.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/ic.o
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier1.f: 4663)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier1.f: 4543)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier1.f: 4544)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier1.f: 4545)
+  0 inform,   4 warnings,   0 severes, 0 fatal for expl_strs_e_3d
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier1.f: 4663)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier1.f: 4608)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier1.f: 4609)
+  0 inform,   3 warnings,   0 severes, 0 fatal for expl_strs_e_2d
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier1.f: 4641)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/navier1.f: 4633)
+  0 inform,   2 warnings,   0 severes, 0 fatal for gradl_rst_t
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/gfldr.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/gfldr.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/ssolv.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/ssolv.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/planx.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/planx.o
+mpif77 -c  -O3 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/math.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/math.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/mxm_wrapper.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/mxm_wrapper.o 
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/hmholtz.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/hmholtz.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/subs1.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/subs1.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/subs2.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/subs2.o
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/hmholtz.f: 54)
+  0 inform,   1 warnings,   0 severes, 0 fatal for hmholtz
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/gmres.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/gmres.o
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/hmholtz.f: 2208)
+  0 inform,   1 warnings,   0 severes, 0 fatal for hmh_flex_cg
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/subs1.f: 749)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/subs1.f: 729)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/subs1.f: 731)
+  0 inform,   3 warnings,   0 severes, 0 fatal for setdtfs
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/subs1.f: 1451)
+  0 inform,   1 warnings,   0 severes, 0 fatal for axhmsf
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/subs1.f: 1451)
+  0 inform,   1 warnings,   0 severes, 0 fatal for aijuj
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/hsmg.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/hsmg.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/convect.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/convect.o
+mpif77 -c  -O0 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/convect2.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/convect2.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/induct.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/induct.o
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/hsmg.f: 250)
+  0 inform,   1 warnings,   0 severes, 0 fatal for hsmg_tnsr
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/hsmg.f: 919)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/hsmg.f: 924)
+  0 inform,   2 warnings,   0 severes, 0 fatal for hsmg_do_fast
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/induct.f: 116)
+  0 inform,   1 warnings,   0 severes, 0 fatal for makebsource_mhd
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/hsmg.f: 2146)
+  0 inform,   1 warnings,   0 severes, 0 fatal for hsmg_tnsr1
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/perturb.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/perturb.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/navier5.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/navier5.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/navier6.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/navier6.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/navier7.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/navier7.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/navier8.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/navier8.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/fast3d.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/fast3d.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/fasts.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/fasts.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/calcz.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/calcz.o
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/byte.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/byte.o
+"/home/hailu/Nek5000/core/byte.c", line 116: warning: variable "len" was declared but never referenced [declared_but_not_referenced]
+    int  i,len,istat;
+           ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/home/hailu/Nek5000/core/byte.c", line 116: warning: variable "istat" was set but never used [set_but_not_used]
+    int  i,len,istat;
+               ^
+
+"/home/hailu/Nek5000/core/byte.c", line 117: warning: variable "slash" was declared but never referenced [declared_but_not_referenced]
+    char slash;
+         ^
+
+"/home/hailu/Nek5000/core/byte.c", line 164: warning: variable "flags" was declared but never referenced [declared_but_not_referenced]
+    int flags;
+        ^
+
+"/home/hailu/Nek5000/core/byte.c", line 165: warning: variable "mode" was declared but never referenced [declared_but_not_referenced]
+    mode_t mode;
+           ^
+
+"/home/hailu/Nek5000/core/byte.c", line 191: warning: variable "flags" was declared but never referenced [declared_but_not_referenced]
+    int flags;
+        ^
+
+"/home/hailu/Nek5000/core/byte.c", line 192: warning: variable "mode" was declared but never referenced [declared_but_not_referenced]
+    mode_t mode;
+           ^
+
+"/home/hailu/Nek5000/core/byte.c", line 230: warning: variable "flags" was declared but never referenced [declared_but_not_referenced]
+    int flags;
+        ^
+
+"/home/hailu/Nek5000/core/byte.c", line 231: warning: variable "mode" was declared but never referenced [declared_but_not_referenced]
+    mode_t mode;
+           ^
+
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/chelpers.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/chelpers.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/byte_mpi.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/byte_mpi.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/postpro.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/postpro.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/interp.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/interp.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/cvode_driver.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/cvode_driver.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/multimesh.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/multimesh.o
+NVFORTRAN-W-0155-The type of FLOAT is now double precision with -r8  (/home/hailu/Nek5000/core/cvode_driver.f: 599)
+  0 inform,   1 warnings,   0 severes, 0 fatal for cv_pstat
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/vprops.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/vprops.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/makeq_aux.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/makeq_aux.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/papi.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/papi.o
+mpif77 -c   -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/3rd_party/nek_in_situ.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/nek_in_situ.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/reader_rea.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/reader_rea.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/reader_par.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/reader_par.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/reader_re2.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/reader_re2.o
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj  /home/hailu/Nek5000/core/3rd_party/finiparser.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/finiparser.o
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj  /home/hailu/Nek5000/core/3rd_party/iniparser.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/iniparser.o
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj  /home/hailu/Nek5000/core/3rd_party/dictionary.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/dictionary.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/hpf.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/hpf.o
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj -I/home/hailu/Nek5000/3rd_party/gslib/include  /home/hailu/Nek5000/core/fcrs.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/fcrs.o
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj -I/home/hailu/Nek5000/3rd_party/gslib/include /home/hailu/Nek5000/core/crs_xxt.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/crs_xxt.o
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj -I/home/hailu/Nek5000/3rd_party/gslib/include /home/hailu/Nek5000/core/crs_amg.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/crs_amg.o
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj -I/home/hailu/Nek5000/3rd_party/gslib/include  /home/hailu/Nek5000/core/experimental/fem_amg_preco.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/fem_amg_preco.o
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg_io.h", line 27: warning: subscript out of range [subscript_out_of_range]
+    SWAP4(0);
+    ^
+
+"/home/hailu/Nek5000/core/crs_amg.c", line 444: warning: function "read_data_mpiio" was declared but never referenced [declared_but_not_referenced]
+  static void read_data_mpiio(
+              ^
+
+"/home/hailu/Nek5000/core/crs_amg.c", line 1187: warning: function "mat_list_nonlocal" was declared but never referenced [declared_but_not_referenced]
+  static void mat_list_nonlocal(
+              ^
+
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj -I/home/hailu/Nek5000/3rd_party/gslib/include  /home/hailu/Nek5000/core/experimental/crs_hypre.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/crs_hypre.o
+mpicc -c  -O2  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj -I/home/hailu/Nek5000/3rd_party/gslib/include  /home/hailu/Nek5000/core/partitioner.c -o /home/hailu/Nek5000/run/shear4/shear_21/obj/partitioner.o
+"/home/hailu/Nek5000/core/partitioner.c", line 156: warning: variable "j" was declared but never referenced [declared_but_not_referenced]
+    int i, j;
+           ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/home/hailu/Nek5000/core/partitioner.c", line 308: warning: variable "nv" was set but never used [set_but_not_used]
+    int nel, nv, lelt, partitioner, algo;
+             ^
+
+"/home/hailu/Nek5000/core/partitioner.c", line 308: warning: variable "partitioner" was set but never used [set_but_not_used]
+    int nel, nv, lelt, partitioner, algo;
+                       ^
+
+"/home/hailu/Nek5000/core/partitioner.c", line 308: warning: variable "algo" was set but never used [set_but_not_used]
+    int nel, nv, lelt, partitioner, algo;
+                                    ^
+
+"/home/hailu/Nek5000/core/partitioner.c", line 309: warning: variable "e" was declared but never referenced [declared_but_not_referenced]
+    int e, n;
+        ^
+
+"/home/hailu/Nek5000/core/partitioner.c", line 309: warning: variable "n" was declared but never referenced [declared_but_not_referenced]
+    int e, n;
+           ^
+
+"/home/hailu/Nek5000/core/partitioner.c", line 310: warning: variable "count" was declared but never referenced [declared_but_not_referenced]
+    int count, ierr, ibuf;
+        ^
+
+"/home/hailu/Nek5000/core/partitioner.c", line 310: warning: variable "ierr" was set but never used [set_but_not_used]
+    int count, ierr, ibuf;
+               ^
+
+"/home/hailu/Nek5000/core/partitioner.c", line 310: warning: variable "ibuf" was declared but never referenced [declared_but_not_referenced]
+    int count, ierr, ibuf;
+                     ^
+
+"/home/hailu/Nek5000/core/partitioner.c", line 312: warning: variable "opt" was declared but never referenced [declared_but_not_referenced]
+    int opt[3];
+        ^
+
+"/home/hailu/Nek5000/core/partitioner.c", line 368: warning: label "err" was declared but never referenced [declared_but_not_referenced]
+  err:
+  ^
+
+mpif77 -c  -O3 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/mxm_std.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/mxm_std.o
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/comm_mpi.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/comm_mpi.o
+mpif77  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj  -c /home/hailu/Nek5000/run/shear4/shear_21/shear.f -o /home/hailu/Nek5000/run/shear4/shear_21/obj/shear.o
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/comm_mpi.f: 73)
+NVFORTRAN-W-0268-Cannot inline subprogram; common block mismatch (/home/hailu/Nek5000/core/comm_mpi.f: 789)
+  0 inform,   2 warnings,   0 severes, 0 fatal for pingpong
+done
+mpif77 -c  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj /home/hailu/Nek5000/core/drive.f
+mpif77  -O2 -Mpreprocess -r8 -Mfixed  -DMPI -DUNDERSCORE -DGLOBAL_LONG_LONG -DTIMER -I/home/hailu/Nek5000/run/shear4/shear_21 -I/home/hailu/Nek5000/core -I./ -I/home/hailu/Nek5000/core/experimental -I/home/hailu/Nek5000/run/shear4/shear_21/obj -o nek5000 drive.o /home/hailu/Nek5000/run/shear4/shear_21/obj/shear.o /home/hailu/Nek5000/run/shear4/shear_21/obj/libnek5000.a -L/home/hailu/Nek5000/3rd_party/blasLapack -lblasLapack -L/home/hailu/Nek5000/3rd_party/gslib/lib -lgs -Wl,--allow-multiple-definition
+
+
+#############################################################
+#                  Compilation successful!                  #
+#############################################################
+   text	   data	    bss	    dec	    hex	filename
+2426435	  95640	144990080	147512155	8cadb5b	nek5000
+
