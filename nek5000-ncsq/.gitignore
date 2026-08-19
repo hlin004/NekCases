@@ -1,0 +1,38 @@
+# Nek5000 run artifacts — all regenerable, none belong in the repository.
+# Note: postproc/ is deliberately NOT ignored; it holds the extracted
+# centreline data and ParaView state files that the report is built from.
+
+# Field output, restart and metadata files
+*.f0*
+*0.f*
+*.fld*
+*.nek5000
+*.sch
+*.his
+
+# Logs
+logfile
+log_*
+*.log
+*.log.*
+
+# Build products
+obj/
+nek5000
+makefile
+.state
+SESSION.NAME
+
+# Raw run directories
+data/
+run[0-9][0-9]/
+
+# LaTeX intermediates (the built PDF is tracked)
+*.aux
+*.out
+*.toc
+*.synctex.gz
+
+# Editor / OS noise
+*~
+.DS_Store
