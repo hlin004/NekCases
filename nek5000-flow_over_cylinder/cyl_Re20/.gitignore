@@ -1,0 +1,4 @@
+# Raw Nek5000 run output (field files, logs, .nek5000) - regenerable
+data/
+# Uncompressed history output (116 MB); post_process/cylinder.his.xz is tracked
+post_process/cylinder.his
